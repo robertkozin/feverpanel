@@ -1,3 +1,6 @@
+experimental_monorepo_root = true
+
 [tools]
 bun = "latest"
 go = "latest"
+watchexec = "latest"
