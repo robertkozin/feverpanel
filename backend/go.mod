@@ -4,6 +4,8 @@ go 1.25.1
 
 require (
 	github.com/alecthomas/kong v1.13.0
+	github.com/creack/pty v1.1.24
+	github.com/gorilla/websocket v1.5.3
 	go.opentelemetry.io/otel v1.39.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.39.0
 	go.opentelemetry.io/otel/sdk v1.39.0

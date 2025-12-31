@@ -4,3 +4,12 @@ experimental_monorepo_root = true
 bun = "latest"
 go = "latest"
 watchexec = "latest"
+
+[tasks.build]
+description = "Build the Fever backend"
+run = "cd backend && go build -o ../minecraftserver ./cmd/fever"
+
+[tasks.run]
+depends = ["build"]
+description = "Run the Fever backend"
+run = "cd minecraftserver && ./fever run"
